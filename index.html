@@ -750,7 +750,7 @@ const PLOTS=[
   [3,"","Here is a {F} for you, {A}.|{P} gave the {A} a {F}.|The {A} ate a {F}.|The {A} can eat a {F}. Yum!|The {A} ate a {F}. Yum!|{P} and the {A} eat a {F}."],
   [2,"","Thank you, {P2}!|\"Thank you!\" said {P}.|They ran back to the {L}.|Now they can play.|Now the {A} can {V}."],
   [1,"","{P} and the {A} nap. The end.|\"I like you, {A}!\" said {P}.|Now the {A} can nap.|The {A} is glad to be back.|The end.|\"I like my {A}!\" said {P}.|\"You are my funny little {A}!\" said {P}.|\"We are home!\" said {P}."]]},
- {id:"trip",titles:["A Trip to the {X}","The {X} Trip","{P} and the {A}","The {A}"],beats:[
+ {id:"trip",wild:true,titles:["A Trip to the {X}","The {X} Trip","{P} and the {A}","The {A}"],beats:[
   [1,"","{P} and {P2} will go on a trip.|{P} and {P2} want to go on a trip.|\"Let us go on a trip!\" said {P}.|Today {P} and {P2} go on a trip.|\"Can we go on a trip?\" said {P2}."],
   [1,"","They get in the {C}.|They go in the {C}.|Get in the {C}!|In the {C} they go.|They ride in the {C}.|They go in a big red {C}.|Here is a big {C}. Get in!"],
   [2,"","The {C} can go fast.|Go, {C}, go!|The {C} went up and down.|It is a big {C}.|The {C} is so fast!|Go, go, go!|One, two, three, go!|Up and down, up and down!"],
@@ -767,11 +767,11 @@ const PLOTS=[
   [2,"","Now they must go.|They must go back.|Get in the {C}! We must go.|\"Come on, we must go!\" said {P}."],
   [3,"","The {A} is sad.|\"We will come back!\" said {P}.|We will come back, {A}!|Thank you, {A}!"],
   [1,"","They go back in the {C}.|The {C} went back.|Back they go in the {C}.|They ride back in the {C}."],
-  [1,"","What a fun trip!|It was a good trip.|It was a fun trip. The end.|\"I like the {X}!\" said {P2}.|\"We are home!\" said {P}. The end.|They are home. What a fun trip!"]]},
+  [1,"","What a fun trip!|What fun! The end.|It is fun to go on a trip. The end.|It was a good trip.|It was a fun trip. The end.|\"I like the {X}!\" said {P2}.|\"We are home!\" said {P}. The end.|They are home. What a fun trip!"]]},
  {id:"cook",titles:["{P} and the {K}","The {K}","{P} Can Make a {K}","The {A}"],beats:[
-  [1,"","{P} can make a {K}.|\"Let us make a {K}!\" said {P}.|{P} will make a {K}.|Today {P} will make a {K}.|\"I can make a {K}!\" said {P}.|{P} will make a big {K}."],
+  [1,"","{P} can make a {K}.|{P} can mix a {K}.|\"Let us make a {K}!\" said {P}.|{P} will make a {K}.|Today {P} will make a {K}.|\"I can make a {K}!\" said {P}.|{P} will make a big {K}."],
   [2,"","{P} got a pot and a pan.|{P} gets a big pot.|Here is a pot. Here is a pan.|Get the pot, {P}!"],
-  [1,"","Put it in the pot.|In it goes!|Put it all in!|{P} put it in the pot."],
+  [1,"","Put it in the pot.|Plop! It is in the pot.|In it goes!|Put it all in!|{P} put it in the pot."],
   [2,"","Mix, mix, mix!|Mix it up, {P}!|{P} can mix it.|{P} will mix and mix."],
   [1,"","In came the {A}.|Look! A {A} came in.|Here is a {A}.|A {A} ran in.|In came a funny little {A}.|Look! A {A} came in to play."],
   [3,"INTRO","The {A} is {Q}.|It is a {Q} {A}.|The {A} is so {Q}!"],
@@ -780,9 +780,9 @@ const PLOTS=[
   [2,"","The {A} is sad.|The {A} sat and sat.|The {A} sat down. It is sad.|The {A} can not have it yet."],
   [1,"","Now the {K} is hot.|It is done!|Now it is done!|The {K} is hot!|The {K} is done!|Look! I made a {K}!|The {K} is big and hot."],
   [3,"","{P} cut the {K}.|Cut, cut, cut!|{P} can cut it.|{P} will cut it up."],
-  [2,"","One for me and one for you!|Here is one for you, {A}.|\"This is for you,\" said {P}.|{P} gave the {A} a bit."],
+  [2,"","One for me and one for you!|Yum! The {A} got a bit.|Here is one for you, {A}.|\"This is for you,\" said {P}.|{P} gave the {A} a bit."],
   [1,"","The {A} is glad.|Yum, yum, yum!|The {A} is so glad!|It is good!"],
-  [1,"","{P} and the {A} ate it all.|They ate it all up.|{P} and the {A} are full.|What a good {K}!|They ate it all. They are full!"],
+  [1,"","{P} and the {A} ate it all.|{P} and the {A} munch and munch.|They ate it all up.|{P} and the {A} are full.|What a good {K}!|They ate it all. They are full!"],
   [2,"","The end.|Now they nap. The end.|{P} and the {A} nap."]]},
  {id:"mud",titles:["The {A} and the Mud","Mud!","{P} and the {A}","The {A}"],beats:[
   [1,"INTRO","{P} has a {A}.|This is {P} and the {A}.|Here is {P}. Here is a {A}.|Look at {P} and the {A}."],
@@ -797,16 +797,104 @@ const PLOTS=[
   [2,"","Now {P} is a mess too!|Look at {P}! What a mess!|{P} is a mess. The {A} is a mess."],
   [1,"","They both get in the tub.|Into the tub they go!|They get in the tub.|{P} and the {A} get in the tub."],
   [2,"","Scrub, scrub, scrub!|Rub, rub, rub!|{P} can scrub the {A}."],
-  [1,"","Now they are not a mess.|Now they are clean.|Now the {A} is clean.|The {A} is wet, but it is clean."],
+  [1,"","Now they are not a mess.|Now it is not a mess.|The {A} is not a mess!|Now they are clean.|Now the {A} is clean.|The {A} is wet, but it is clean."],
   [3,"","{P} and the {A} are wet.|The {A} is wet. {P} is wet."],
-  [1,"","{P} and the {A} nap. The end.|Now they can nap. The end.|The {A} is glad. The end.|Do not get in the mud, {A}!|\"You are my little {A}!\" said {P}.|They are clean. The end."]]}
+  [1,"","{P} and the {A} nap. The end.|Now they can nap. The end.|The {A} is glad. The end.|Do not get in the mud, {A}!|\"You are my little {A}!\" said {P}.|They are clean. The end."]]},
+ {id:"gift",friend:true,titles:["A Gift for {P2}","The Big Box","The Gift"],beats:[
+  [1,"","{P} has a gift for {P2}.|Look! A gift!|{P} got a gift. It is in a big box.|{P} got a gift for {P2}.|Look! {P} has a gift for {P2}.|\"This gift is for {P2},\" said {P}.|Here is a gift for {P2}."],
+  [2,"","It is in a big box.|The gift is in a box.|What is in the box?|It is a big red box.|The box is big. The box is red."],
+  [3,"","The {A} sat on the box.|The {A} can smell the box.|\"Get off the box, {A}!\" said {P}."],
+  [1,"","{P} ran to {P2}.|{P} went to see {P2}.|{P} and the {A} ran to {P2}.|Here is {P2}!"],
+  [1,"","\"This is for you!\" said {P}.|\"Here, {P2}!\" said {P}.|\"Here, {P2}! It is for you!\" said {P}.|{P} gave {P2} the box.|\"A gift for me?\" said {P2}."],
+  [2,"","{P2} is so glad.|\"Thank you!\" said {P2}.|{P2} said, \"Can I open it?\"|\"Can I open it now?\" said {P2}."],
+  [1,"","{P2} can not get it open.|The box will not open.|{P2} tugs and tugs.|Tug, tug, tug!|The lid is stuck."],
+  [2,"","\"I will help!\" said {P}.|{P} can help.|They both tug.|{P} and {P2} tug and tug."],
+  [1,"","Pop! It is open!|Pop! The box is open.|Now it is open!|Yes! It is open.|Pop! Got it!|Pop! The lid came off."],
+  [1,"","It is a {O}!|In the box is a {O}!|Look! A {O}!|What is it? It is a {O}!|It is a little {O}!"],
+  [2,"","\"I like it!\" said {P2}.|{P2} is so glad!|\"Thank you, {P}!\" said {P2}.|It is the best gift!"],
+  [3,"","The {A} got in the box!|Look! The {A} is in the box.|The {A} jumps in the box.|Now the {A} can nap in the box."],
+  [1,"","They play with the {O}.|It is fun! The end.|{P} and {P2} play with the {O}.|They can play and play.|What a fun gift! The end.|They all play. The end."]]},
+ {id:"garden",titles:["The Little Plant","{P} and the Plant","The Plant"],beats:[
+  [1,"","{P} has a little plant.|{P} got a plant.|Look! {P} has a plant.|Here is a little plant.|\"I have a plant!\" said {P}."],
+  [2,"","It is a little green plant.|The plant is so little.|It is not big yet.|The plant is in a cup."],
+  [1,"","{P} will dig.|Dig, dig, dig!|{P} can dig a pit.|{P} digs in the sand.|\"I will dig a pit,\" said {P}."],
+  [1,"","Put the plant in the pit.|In it goes!|{P} sets the plant in the pit.|Now the plant is in."],
+  [2,"","Pat it down. Pat, pat, pat!|Pat, pat, pat!|{P} can pat it down."],
+  [1,"","The plant must get wet.|{P} can fill a cup.|Drip, drip, drip!|Splish, splash!"],
+  [2,"","The plant gets sun.|The sun is hot.|The sun is on the plant.|Look at the sun!"],
+  [1,"","Then the {A} came.|Look! It is the {A}!|In came the {A}.|Here is the {A}."],
+  [1,"","The {A} digs in the sand!|The {A} can dig too.|Dig, dig! The {A} digs up the plant!|The {A} dug up the plant!"],
+  [1,"","\"Stop, {A}!\" said {P}.|\"No, no, {A}!\" said {P}.|Stop, {A}! Stop!|\"Not the plant!\" said {P}."],
+  [2,"","{P} is sad.|The plant is not in the pit.|{P} can fix it.|{P} will fix it."],
+  [1,"","{P} sets it back in.|{P} puts it back.|{P} can put it back in the pit.|Back in it goes!"],
+  [2,"","The {A} will not dig. The {A} sits.|The {A} sits and sits.|\"Good {A}!\" said {P}.|Now the {A} is good."],
+  [1,"","The plant can grow and grow.|Now the plant is big!|Look! The plant is so big!|Look! A red bud!"],
+  [1,"","{P} is glad. The end.|\"What a pretty plant!\" said {P}. The end.|{P} and the {A} sit in the sun. The end.|Now it is a big plant. The end."]]},
+ {id:"pond",friend:true,wild:true,animals:["frog","duck","crab","bug","slug","fox"],titles:["At the Pond","The Pond","{P} and the {A}"],beats:[
+  [1,"","{P} and {P2} go to the pond.|They will go to the pond.|\"Let us go to the pond!\" said {P}.|Today {P} and {P2} go to the pond."],
+  [2,"","They get a net.|{P2} has a net.|They have a big net.|{P} gets a net and a cup."],
+  [1,"","Look! A {A}!|{P} can see a {A}.|What is that? It is a {A}!|There is a {A} on a log.|\"I see a {A}!\" said {P2}."],
+  [2,"","The {A} is {Q}.|It is a {Q} {A}.|What a {Q} {A}!|It is a funny little {A}."],
+  [1,"","\"Can I get it?\" said {P}.|{P} will get it in the net.|\"I will get it!\" said {P}.|{P} can get it."],
+  [1,"","Swish! {P} got it!|Swish, swish! In the net it goes.|{P} got the {A} in the net!|Swish! Got it!"],
+  [1,"","Hop, hop! The {A} is not in the net!|Hop! The {A} got away!|The {A} hops out!|The {A} jumps out of the net.|Hop! It got out!|The {A} got out!"],
+  [1,"","{P2} ran to get it.|{P2} will get it.|\"I will get it!\" said {P2}.|{P2} ran and ran."],
+  [1,"","Splash! {P2} fell in the pond!|Splash! {P2} is in the pond!|Down went {P2}. Splash!|{P2} slips. Splash!"],
+  [1,"","{P2} is wet!|Now {P2} is so wet!|Look at {P2}! {P2} is wet!|\"I am wet!\" said {P2}."],
+  [2,"","They laugh and laugh.|It is so funny!|{P} and {P2} laugh.|What fun!|Ha, ha, ha!|It is fun!"],
+  [2,"","The {A} sat on a log.|Look! The {A} is on a log.|The {A} can see them.|The {A} is glad."],
+  [3,"","\"Let it go,\" said {P}.|We will let it go.|The {A} can live in the pond."],
+  [1,"","They must go back.|{P} and {P2} ran back.|They ran back.|Now they go back."],
+  [1,"","It was fun at the pond. The end.|It is fun at the pond. The end.|What fun! The end.|\"We will come back!\" said {P}. The end."]]},
+ {id:"camp",friend:true,titles:["{P} Can Camp","At Camp","The Tent"],beats:[
+  [1,"","{P} and {P2} will camp.|They go to camp.|\"Let us camp!\" said {P2}.|Today {P} and {P2} go to camp."],
+  [1,"","They set up a tent.|Here is the tent.|They get the tent up.|Up goes the tent!"],
+  [2,"","It is a big tent.|The tent is red.|The tent is so big!|What a big tent!"],
+  [2,"","They get in the tent.|In they go!|They sit in the tent.|{P} and {P2} sit in the tent."],
+  [1,"","It is dusk.|Now it is dusk.|The sun is not up. It is dusk.|It is dusk at camp."],
+  [2,"","They sit and sing.|They sing a song.|{P} and {P2} sing and sing.|They have a snack."],
+  [1,"","What is that?|\"What is that?\" said {P2}.|Tap, tap, tap!|Is it a bug?|\"Is it a big bug?\" said {P}."],
+  [1,"","It is in the tent!|It ran in the tent!|Look! It is on {P}!|It jumps on {P}!"],
+  [1,"","It is not a bug. It is the {A}!|It is the {A}!|Look! It is the {A}!|Ha! It is the {A}!"],
+  [2,"","The {A} came to camp too.|The {A} ran in the tent.|\"You came too!\" said {P}.|The {A} is glad."],
+  [2,"","They laugh and laugh.|It is so funny!|What a funny {A}!|They all laugh.|Ha, ha, ha!|It is fun!"],
+  [1,"","They nap in the tent.|{P}, {P2} and the {A} nap.|All of them nap in the tent.|They all nap. Hush."],
+  [1,"","What a fun camp! The end.|Hush. The end.|It was a good camp. The end."]]},
+ {id:"race",friend:true,titles:["Run, {P}, Run!","The Fast {A}","Who Is Fast?"],beats:[
+  [1,"","{P} and {P2} will run.|\"Let us run!\" said {P}.|They will run fast.|\"Who is fast?\" said {P2}."],
+  [2,"","Get set!|Get set. Go!|One, two, three, go!|Set, go!"],
+  [1,"","{P} runs fast.|{P} can run so fast!|Run, {P}, run!|Look at {P} run!"],
+  [1,"","{P2} runs fast too.|{P2} is fast too!|Run, {P2}, run!|{P2} can run fast."],
+  [2,"","The {A} runs with them.|The {A} can run too!|Look! The {A} is fast!|The {A} is so fast!"],
+  [1,"","{P} trips on a rock.|{P} trips on a stick.|Bump! {P} fell.|Down went {P}!"],
+  [1,"","{P} is sad.|{P} is not glad.|\"I fell,\" said {P}.|{P} sits on the grass."],
+  [1,"","{P2} stops.|{P2} ran back to {P}.|{P2} will help {P} get up.|\"I will help you,\" said {P2}."],
+  [2,"","{P2} helps {P} up.|{P} gets up.|Up, up, {P}!|Now {P} can run."],
+  [1,"","They run on.|{P} and {P2} run and run.|They run and run.|Now they run on and on.|They run up the hill."],
+  [2,"","The {A} is fast. It wins!|The {A} wins!|Look! The {A} got there!|The {A} is the best!"],
+  [1,"","They all laugh.|Ha, ha, ha!|\"The {A} is so fast!\" said {P}.|It is so funny!|They laugh and laugh."],
+  [1,"","What a fun run! The end.|They all rest. The end.|\"We can run with the {A}!\" said {P2}. The end.|It was a fun run. The end."]]},
+ {id:"bed",titles:["{P} Can Not Nap","Hush, {A}!","In Bed"],beats:[
+  [1,"","{P} is in bed.|{P} gets in bed.|It is dusk. {P} is in bed.|{P} sits in bed."],
+  [2,"","{P} has a doll.|{P} has a little doll in bed.|The doll is in bed too.|{P} hugs the doll."],
+  [1,"","{P} can not nap.|{P} will not nap.|\"I can not nap!\" said {P}.|Nap? Not yet!"],
+  [1,"","Tap, tap, tap!|What is that?|\"What is that?\" said {P}.|Bump, bump, bump!"],
+  [2,"","Is it a bug?|Is it a big bug?|Is it a rat?"],
+  [1,"","{P} gets up.|{P} can look.|Up gets {P}.|{P} will get up and look."],
+  [1,"","It is the {A}!|Look! It is the {A}!|It is not a bug. It is the {A}!|Ha! It is the {A}!"],
+  [2,"","The {A} can not nap too.|The {A} is sad.|\"I can not nap!\" said the {A}.|The {A} sits on the rug."],
+  [1,"","\"Get in, {A}!\" said {P}.|\"Come here, {A}!\" said {P}.|Hop in, {A}!|\"You can nap with me,\" said {P}."],
+  [1,"","The {A} hops in the bed.|The {A} gets in the bed.|In hops the {A}!|The {A} jumps in bed."],
+  [2,"","The {A} is snug.|It is so snug!|They are snug in bed.|{P} and the {A} are snug."],
+  [1,"","Hush, hush.|Hush. It is dusk.|Now it is still.|Hush, {A}!"],
+  [1,"","{P} and the {A} nap. The end.|Now they can nap. The end.|They nap and nap. The end."]]}
 ];
 const ANIMALS=new Set("cat bat rat ram pig dog frog hog bug pug slug cub duck hen chick crab mule ant fox".split(" "));
 const ADJ_OK=new Set("fat big sad glad wet red black fast slim snug cute thin tan".split(" "));
 const V_NO=new Set("win wish brag crash trip press hunt".split(" "));
-const O_NO=new Set("dot drip trap list dust stem blob glob prop song sun bump tusk band plug stack skin tin peg".split(" "));
+const O_NO=new Set("dot drip trap list dust stem blob glob prop song sun bump tusk band plug stack skin tin peg stick twig brick rag lock".split(" "));
 const VEH=new Set("van truck jet tram ship sled bus".split(" "));
-const OUT=new Set("pond hill camp lake sand cave shop grass".split(" "));
+const OUT=new Set("pond hill camp lake sand cave shop".split(" "));
 const L_NO=new Set("mug jug pot pan cup bag sack dish lap pad spot pit bin chest hole jet tram bath block path land".split(" "));
 const COOK=["bun","cake","snack"];
 const ONP=new Set("mat rug lap log rock block bed sled hill path grass desk pad spot slide sand land cot ship dish chest".split(" "));
@@ -822,7 +910,8 @@ function castPools(){
     O:uniq(e=>e.t==="n"&&!O_NO.has(e.w)),L:uniq(e=>isL(e)&&!OUT.has(e.w)&&!L_NO.has(e.w)),K:[...new Set([...allEntries().filter(e=>e.t==="f"&&COOK.includes(e.w)).map(e=>e.w),"bun"])],C:uniq(e=>VEH.has(e.w)),X:uniq(e=>OUT.has(e.w)),F:uniq(e=>e.t==="f"&&!["jam","ham","snack"].includes(e.w))};
 }
 function pickCast(plots){
-  const pools=castPools();const usedPat=new Set();const taken=new Set();const cast={};
+  const pools=castPools();
+  const wl=plots.find(p=>p.animals);if(wl){const key=plots.length>1?"A2":"A";const lim=pools.A.filter(w=>wl.animals.includes(w));if(lim.length)pools[key]=lim}const usedPat=new Set();const taken=new Set();const cast={};
   const ok=w=>lettersOk(w.toLowerCase())&&(decodable(w.toLowerCase())||!!findPat(w.toLowerCase()))&&!sightSet().has(w.toLowerCase());
   const choose=(slot,pool)=>{
     const c=shuffle(pool.filter(w=>ok(w)&&!taken.has(w.toLowerCase())));
@@ -833,8 +922,8 @@ function pickCast(plots){
     cast[slot]=w;
   };
   // the animal and main name first, so the most-repeated words carry the pattern
-  const text=plots.map(plot=>plot.beats.map(b=>b[2]).join("|")+plot.titles.join("|")).join("|")+(plots.length>1&&plots.some(p=>p.id==="trip")?"|{A2}{A2}":"");const cnt={};(text.match(/\{(\w+)\}/g)||[]).forEach(m=>{const k=m.slice(1,-1);if(pools[k.replace("2","")])cnt[k]=(cnt[k]||0)+1});
-  Object.keys(cnt).sort((a,b)=>(b==="A")-(a==="A")||cnt[b]-cnt[a]).forEach(s=>choose(s,pools[s.replace("2","")]));
+  const text=plots.map(plot=>plot.beats.map(b=>b[2]).join("|")+plot.titles.join("|")).join("|")+(plots.length>1&&plots.some(p=>p.wild)?"|{A2}{A2}":"");const cnt={};(text.match(/\{(\w+)\}/g)||[]).forEach(m=>{const k=m.slice(1,-1);if(pools[k.replace("2","")])cnt[k]=(cnt[k]||0)+1});
+  Object.keys(cnt).sort((a,b)=>(b==="A")-(a==="A")||cnt[b]-cnt[a]).forEach(s=>choose(s,pools[s]||pools[s.replace("2","")]));
   cast.on=ONP.has((cast.L||"").toLowerCase())?"on":"in";cast.on2=ONP.has((cast.L2||"").toLowerCase())?"on":"in";
   return cast;
 }
@@ -853,12 +942,12 @@ function tellChain(plots,cast){
     const last=ci===plots.length-1;
     for(const [pri,grp,vs0] of plot.beats){
       if(petKnown&&grp==="INTRO")continue;
-      let vs=vs0;if(plots.length>1&&plot.id==="trip")vs=vs.replace(/\{A\}/g,"{A2}");
+      let vs=vs0;if(plots.length>1&&plot.wild)vs=vs.replace(/\{A\}/g,"{A2}");
       let bestV=null,bestS=-1e9;
       for(const v of shuffle(vs.split("|"))){
         if(!last&&/The end/.test(v))continue;
         if(petKnown&&/\b[Aa] (funny |little |big )*\{A\}/.test(v))continue;
-        if(v.includes("{P2}")&&!friend&&!/\{P2\} (came|will|can|said)|get \{P2\}|ask \{P2\}|help me, \{P2\}|and \{P2\}/.test(v))continue;
+        if(v.includes("{P2}")&&!friend&&!plot.friend&&!/\{P2\} (came|will|can|said)|get \{P2\}|ask \{P2\}|help me, \{P2\}|and \{P2\}/.test(v))continue;
         const s=fillBeat(v,cast);if(!s)continue;
         const ws=sentWords(s);if(!ws.every(wordOk))continue;
         const parts=splitSent(s);const longest=Math.max(...parts.map(p=>sentWords(p).length));
@@ -874,7 +963,7 @@ function tellChain(plots,cast){
       sentWords(bestV).forEach(w=>{if(sw.has(w.toLowerCase()))covered.add(w.toLowerCase())});
       lines.push({s:bestV,pri,grp:grp?ci+grp:"",ch:ci,n:sentCount(bestV)});
     }
-    if(!(plots.length>1&&plot.id==="trip"))petKnown=true;
+    if(!(plots.length>1&&plot.wild))petKnown=true;
   });
   if(cast.P2&&!lines.some(l=>l.pri===1&&l.s.includes(cast.P2)))lines.forEach(l=>{if(l.s.includes(cast.P2)){l.pri=3;l.grp="H"}});
   return lines;
@@ -907,7 +996,7 @@ function generate(){
   const tries=[];
   for(const first of shuffle(PLOTS)){
     const order=[first,...shuffle(PLOTS.filter(p=>p!==first))];
-    for(let k=0;k<2;k++){
+    for(let k=0;k<1;k++){
       const cast=pickCast(order);if(!cast.A||!cast.P)continue;
       let lines=null,used=1;
       for(let c=1;c<=order.length;c++){lines=tellChain(order.slice(0,c),cast);used=c;if(total(lines)>=T)break}
@@ -917,11 +1006,16 @@ function generate(){
       const pages=packPages(lines,nPages);
       const usedW=new Set(pages.flatMap(p=>sentWords(p).map(w=>w.toLowerCase())).filter(w=>sw.has(w)));
       const patUses=pages.reduce((t,p)=>t+sentWords(p).filter(w=>findPat(w.toLowerCase())).length,0);
-      tries.push({order,cast,pages,chapters:used,score:usedW.size*3+Math.min(patUses,24)+pages.length*6-used*2+Math.random()*6});
+      tries.push({order,cast,pages,chapters:used,nUsed:usedW.size,score:usedW.size*3+Math.min(patUses,24)+pages.length*6-used*2+Math.random()*6});
     }
   }
   tries.sort((a,b)=>b.score-a.score);
-  const pickT=tries.length?tries[Math.floor(Math.random()*Math.min(2,tries.length))]:null;
+  // every storyline that fits the chosen words about as well as the best one gets an equal chance
+  const maxP=Math.max(...tries.map(t=>t.pages.length)),maxU=Math.max(...tries.map(t=>t.nUsed));
+  let top=tries.filter(t=>t.pages.length>=Math.floor(maxP*0.8)&&t.nUsed>=Math.floor(maxU*0.7));
+  const fresh=top.filter(t=>!(S.recent||[]).includes(t.order[0].id));if(fresh.length)top=fresh;
+  const pickT=top.length?top[Math.floor(Math.random()*top.length)]:null;
+  if(pickT)S.recent=[pickT.order[0].id,...(S.recent||[]).filter(x=>x!==pickT.order[0].id)].slice(0,4);
   if(!pickT)return{title:"My Book",pages:["I can read!"]};
   const {order,cast,pages}=pickT;
   const small=new Set(["the","a","and","to","in","on","of"]);
