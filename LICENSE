@@ -1,0 +1,24 @@
+Mini Book Maker
+Copyright (c) 2026 Yu Quan Chen. All rights reserved.
+
+You may use the Mini Book Maker website or index.html file to create books for
+personal, family or classroom use, and you may print and share the books you make.
+
+No other permission is granted. You may not copy, modify, republish, distribute
+or sell this program or its source code, in whole or in part, without written
+permission from Yu Quan Chen.
+
+THE PROGRAM IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
+
+-------------------------------------------------------------------------------
+Third-party parts included in this repository keep their own licenses:
+
+- Andika font (source/fonts/): Copyright (c) 2004-2022 SIL International.
+  SIL Open Font License, Version 1.1. See source/fonts/OFL.txt.
+- jsPDF (source/lib/ and built into index.html): Copyright (c) 2010-2021
+  James Hall, yWorks GmbH and contributors. MIT License.
+  See source/lib/jsPDF-LICENSE.txt.
+- Lexend font (loaded from Google Fonts): Copyright The Lexend Project Authors.
+  SIL Open Font License, Version 1.1.
+
+These third-party parts are not covered by the "All rights reserved" notice above.
